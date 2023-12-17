@@ -1,0 +1,49 @@
+В рамках сегодняшних заданий вы создадите портфолио для себя, а также научитесь работать с базовыми командами в git.
+Создать свой репозиторий в таким же именем, как и имя пользователя 
+<ddubouskaya.git was created>
+
+Склонировать его на свой компьютер в отдельную папку
+$git init ddubouskaya
+$cd ddubouskaya
+$git clone git@github.com:ddubouskaya/ddubouskaya.git (или выбрав Clone git repository из меню Start >выбрать нужный репозитрий из выпадающего списка)
+
+Склонировать себе следующий репозиторий в отдельную папку https://github.com/testrusau/testrusau
+$git init artsiomrusau
+$cd artsiomrusau
+$ git clone git@github.com:testrusau/testrusau.git 
+
+Выберите один из любых вариантов и выполните его.
+Вариант 1: Скопировать данные из склонированного репозитория и вставить их в ваш репозиторий из шага 2
+$ cp -r testrusau/* ddubouskaya
+$ git add .
+$ git commit -m "Копирование данных из testrusau в ddubouskaya"
+$ git push
+
+Вариант 2 (задание со звездочкой): запушить данные из репозитория artichokeee в ваш репозиторий из шага 2
+$git remote add artichokeee https://github.com/artichokeee/artichokeee.git
+$git pull artichokeee main --allow-unrelated-histories
+$ git add .
+$ git commit -m "Add information from Artishokeee"
+$ git push
+
+Открыть файл README.md и поочередно заменить каждый блок на вашу информацию . Каждое изменений блока делайте через отдельный коммит.
+$ git add .
+$ git commit -m "Add information to description"
+$ git push
+
+Поочередно создайте репозитории для каждого выполненного задания по прошедшим модулям и загрузите туда ваши решения ДЗ.
+Это можно сделать двумя способами: (1) напрямую через github или (2) создав локальный репозиторий у вас на компьютере + объявить его удаленно. Создайте хотя бы два репозитория вторым способом. Остальные по вашему усмотрению
+Обязательно синхронизируйте ваши данные на удаленных и локальных репозиториях. Для этого используйте git push и git pull соответственно
+$git init webapptesting
+$git remote add webapptesting https://github.com/ddubouskaya/webapptesting.git
+$git pull webapptesting main
+<Или через git clone>
+
+Далее добавьте в файл README.md новый блок Testing Artefacts (Тестовые артефакты) по аналогии с другими блоками, где каждая новая строка будет включать в себя название модуля (репозитория) и ссылку, по которой специалист сможет ознакомиться с вами
+$echo Testing Artefacts >>README.md
+<Или Изменяем вручную>
+
+Залейте изменения на удаленный репозиторий
+$ git add .
+$ git commit -m "Add information to description"
+$ git push
