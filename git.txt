@@ -13,8 +13,8 @@ $ git clone git@github.com:testrusau/testrusau.git
 
 Выберите один из любых вариантов и выполните его.
 Вариант 1: Скопировать данные из склонированного репозитория и вставить их в ваш репозиторий из шага 2
-$ cp -r testrusau/ ddubouskaya             <git push git@github.com:ddubouskaya/testrusau.git main:main>
-$ git add .
+$ cp -r testrusau/ ddubouskaya                                   << cd ddubouskaya >> git pull ~/Documents/test/testrusau/testrusau main >>git push origin main>>
+$ git add .                                                            
 $ git commit -m "Копирование данных из testrusau в ddubouskaya"
 $ git push
 
