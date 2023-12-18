@@ -14,13 +14,13 @@ $ git clone git@github.com:testrusau/testrusau.git
 
 Выберите один из любых вариантов и выполните его.
 Вариант 1: Скопировать данные из склонированного репозитория и вставить их в ваш репозиторий из шага 2
-$ cp -r testrusau/ ddubouskaya
+$ cp -r testrusau/ ddubouskaya             <git push git@github.com:ddubouskaya/testrusau.git main:main>
 $ git add .
 $ git commit -m "Копирование данных из testrusau в ddubouskaya"
 $ git push
 
 Вариант 2 (задание со звездочкой): запушить данные из репозитория artichokeee в ваш репозиторий из шага 2
-$git remote add artichokeee https://github.com/artichokeee/artichokeee.git
+$git remote add artichokeee origin https://github.com/artichokeee/artichokeee.git
 $git pull artichokeee main --allow-unrelated-histories
 $ git add .
 $ git commit -m "Add information from Artishokeee"
